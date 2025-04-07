@@ -1,6 +1,14 @@
 main {
-    max-width: 200px;
+    width: 70%;
     text-align: center;
+    margin: auto;
+    background-color: rgb(62, 208, 159);
+    padding: 10px;
+    border-radius: 20px;
+}
+body{
+    background-color: bisque;
+
 }
 * {
     box-sizing: border-box;
