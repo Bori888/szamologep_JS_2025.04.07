@@ -1,4 +1,7 @@
-import { szamGombokLetrehozasa,szamokMegadas } from "./fuggvenyek.js";
+import { szamLetrehoz,gombEsemeny,muvJel,szamolas, torol } from "./fuggvenyek.js";
 
-szamGombokLetrehozasa();
-szamokMegadas();
+szamLetrehoz()
+gombEsemeny()
+const lista = muvJel()
+szamolas(lista)
+torol()

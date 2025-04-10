@@ -31,10 +31,24 @@ article {
     padding: 5px;
 }
 .szamok {
-   
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 gomb egy sorban */
+    grid-gap: 10px;
+    margin: 10px;
 }
+
 .szamok button {
-    
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.szamok button:hover {
+    background-color: lightgray;
 }
 .muvjelek {
     grid-area: muv;
