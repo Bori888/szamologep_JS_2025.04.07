@@ -1,5 +1,5 @@
 main {
-    width: 70%;
+    width: 30%;
     text-align: center;
     margin: auto;
     background-color: rgb(62, 208, 159);
@@ -25,11 +25,19 @@ article {
     grid-area: kij;
     border: 1px solid gray;
     border-radius: 8px;
-    height: 30px;
+    min-height: 60px;
+    font-size: 24px;
     text-align: left;
     font-weight: bold;
-    padding: 5px;
+    padding: 10px;
+    background-color: white;
+
+    word-wrap: break-word;   /* hosszú szavakat (számokat) törje el */
+    overflow-wrap: break-word;
+    white-space: normal;     /* engedélyezi a sortörést */
 }
+
+
 .szamok {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 gomb egy sorban */
@@ -47,17 +55,44 @@ article {
     transition: background-color 0.2s ease;
 }
 
-.szamok button:hover {
+
+.szamok {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin: 10px;
+}
+
+.szamok button,
+.muvjelek button {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+    border-radius: 10px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.szamok button:hover,
+.muvjelek button:hover {
     background-color: lightgray;
 }
+
 .muvjelek {
     grid-area: muv;
-    margin: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
+    margin: 10px;
+    justify-items: center;
 }
-.muvjelek button {
-  
-    width: 30px;
+header {
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
 }
+
+
